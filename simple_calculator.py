@@ -1,4 +1,9 @@
-# simple calculator 
+"""💡 Tum is project se kya seekhoge:
+Function banana aur use karna
+
+User se data lena
+
+Basic error handling (like divide by zero)"""
 
 def add(a, b):
     return a + b
