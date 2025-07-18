@@ -92,3 +92,21 @@ Learning Point:
 - Using f-strings for formatted strings
 - Dictionary data structure to store task details
 """
+
+def view_tasks():
+    """Display all tasks with their completion status"""
+    if not tasks:
+        print("No tasks in the list!")
+    else:
+        print("\nTask List:")
+        for index, task in enumerate(tasks, start=1):
+            status = "✓" if task["completed"] else " "
+            print(f"{index}. [{status}] {task['task']}")
+
+"""
+Learning Point:
+- Checking if list is empty
+- enumerate() to get index while looping
+- Ternary operator for conditional status
+- Accessing dictionary values
+"""
